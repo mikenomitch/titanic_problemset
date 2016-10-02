@@ -83,9 +83,9 @@ def custom_heuristic(file_path):
                 ratesForValuesInColums[firstColName][valA] = secondCallRatesWithinFirst
             firstRunIdx = firstRunIdx + 1
 
+    sortedDecisionKeys = reversed(sorted(rates.keys()))
+
     def makeAGuess(passenger):
-        print('STARTING STARTING STARTING STARTING STARTING STARTING')
-        sortedDecisionKeys = reversed(sorted(rates.keys()))
         decision = 'undecided'
         for decisionKey in sortedDecisionKeys:
             if decision == 'undecided':
